@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="base_margin_16">16dp</dimen>
+    <dimen name="base_margin_24">24dp</dimen>
+    <dimen name="base_margin_8">8dp</dimen>
+    <dimen name="base_margin_4">4dp</dimen>
+
+    <dimen name="textInputLayoutWidth">280dp</dimen>
+    <dimen name="textInputLayoutHeight">56dp</dimen>
+
+    <dimen name="bid_edit_text_width">180dp</dimen>
+    <dimen name="bid_edit_text_height">36dp</dimen>
+    <dimen name="bid_button_width">116dp</dimen>
+    <dimen name="bid_button_height">36dp</dimen>
+
+    <dimen name="product_image_width">244dp</dimen>
+    <dimen name="product_image_height">174dp</dimen>
+    <dimen name="product_name_text_size">22sp</dimen>
+    <dimen name="init_price_text_size">18sp</dimen>
+    <dimen name="bid_text_size">18sp</dimen>
+    <dimen name="product_price_text_size">22sp</dimen>
+    <dimen name="product_like_icon_dimen">16dp</dimen>
+    <dimen name="product_additional_information_section_text_width">86dp</dimen>
+
+    <dimen name="icon_12">12dp</dimen>
+    <dimen name="icon_24">24dp</dimen>
+</resources>

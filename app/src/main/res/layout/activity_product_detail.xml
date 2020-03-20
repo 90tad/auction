@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_detail.ProductDetail">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/product_detail_app_bar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/base_margin_16"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/base_margin_8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="110dp"
+                        android:layout_margin="@dimen/base_margin_8"
+                        android:background="@drawable/product_image_background"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/koi1_01" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="110dp"
+                        android:layout_margin="@dimen/base_margin_8"
+                        android:background="@drawable/product_image_background"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/koi1_01" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="110dp"
+                        android:layout_margin="@dimen/base_margin_8"
+                        android:background="@drawable/product_image_background"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/koi1_01" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/base_margin_8"
+                        android:layout_marginLeft="@dimen/base_margin_8"
+                        android:drawableStart="@drawable/ic_zoom_in_black_24dp"
+                        android:drawableLeft="@drawable/ic_zoom_in_black_24dp"
+                        android:drawablePadding="@dimen/base_margin_8"
+                        android:text="@string/tap_to_zoom" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/koi1_01" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_regular"
+                android:text="@string/product_name_example"
+                android:textSize="@dimen/product_name_text_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/maven_pro_regular"
+                    android:text="@string/init_price"
+                    android:textSize="@dimen/init_price_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/base_margin_8"
+                    android:fontFamily="@font/maven_pro_bold"
+                    android:text="@string/product_price_example"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/product_price_text_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_8"
+                android:fontFamily="@font/maven_pro_regular"
+                android:text="@string/set_bid"
+                android:textSize="@dimen/bid_text_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/base_margin_8"
+                    android:background="@drawable/product_image_background">
+
+                    <EditText
+                        android:layout_width="@dimen/bid_edit_text_width"
+                        android:layout_height="@dimen/bid_edit_text_height"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
+                        android:paddingHorizontal="@dimen/base_margin_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/base_margin_8"
+                        android:fontFamily="@font/maven_pro_regular"
+                        android:gravity="center"
+                        android:text="@string/vnd_currency" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/bid_button_width"
+                    android:layout_height="@dimen/bid_button_height"
+                    android:layout_marginHorizontal="@dimen/base_margin_16"
+                    android:layout_marginVertical="@dimen/base_margin_8"
+                    android:background="@drawable/custom_button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/maven_pro_regular"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="@string/set_bid_button_text"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_regular"
+                android:text="@string/set_bid_automatic"
+                android:textSize="@dimen/bid_text_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/base_margin_8"
+                    android:background="@drawable/product_image_background">
+
+                    <EditText
+                        android:layout_width="@dimen/bid_edit_text_width"
+                        android:layout_height="@dimen/bid_edit_text_height"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
+                        android:paddingHorizontal="@dimen/base_margin_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/base_margin_8"
+                        android:fontFamily="@font/maven_pro_regular"
+                        android:gravity="center"
+                        android:text="@string/vnd_currency" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/bid_button_width"
+                    android:layout_height="@dimen/bid_button_height"
+                    android:layout_marginHorizontal="@dimen/base_margin_16"
+                    android:layout_marginVertical="@dimen/base_margin_8"
+                    android:background="@drawable/custom_button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/maven_pro_regular"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="@string/set_bid_automatic_button_text"
+                    android:textColor="@color/colorPrimary"
+                    tools:targetApi="m" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/ProductProperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_id_example" />
+
+            <TextView
+                style="@style/ProductProperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_owner_example" />
+
+            <TextView
+                style="@style/ProductProperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_sex_example" />
+
+            <TextView
+                style="@style/ProductProperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_birth_day_example" />
+
+            <TextView
+                style="@style/ProductProperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_dimen_example" />
+
+            <TextView
+                style="@style/ProductProperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_type_example" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/rating_bar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/product_comment_count_example" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginVertical="@dimen/base_margin_8"
+                android:background="@color/colorGray" />
+
+            <include layout="@layout/product_detail_additional_information" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/product_detail_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabInlineLabel="true"
+                    app:tabMode="scrollable">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_auction_rules"
+                        android:text="@string/auction_rules" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_auction_history"
+                        android:text="@string/auction_history" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_shipping_information"
+                        android:text="@string/shipping_information" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_common_questions"
+                        android:text="@string/common_question" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_comment_and_review"
+                        android:text="@string/comment_and_review" />
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/product_detail_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

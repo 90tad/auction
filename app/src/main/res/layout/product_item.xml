@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/base_margin_16"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/product_image_height"
+        android:layout_height="@dimen/product_image_height">
+
+        <ImageView
+            android:id="@+id/product_image_view"
+            android:layout_width="@dimen/product_image_height"
+            android:layout_height="@dimen/product_image_height"
+            android:background="@drawable/product_image_background"
+            android:contentDescription="@string/image_content_description"
+            android:scaleType="centerInside"
+            android:src="@drawable/koi1_01" />
+
+        <ImageView
+            android:id="@+id/product_like_image_view"
+            android:layout_width="@dimen/product_like_icon_dimen"
+            android:layout_height="@dimen/product_like_icon_dimen"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/base_margin_8"
+            android:src="@drawable/ic_like" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/product_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_pro_regular"
+        android:maxWidth="@dimen/product_image_height"
+        android:text="@string/product_name_example"
+        android:textSize="@dimen/product_name_text_size" />
+
+    <TextView
+        android:id="@+id/product_price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_pro_bold"
+        android:text="@string/product_price_example"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/product_price_text_size" />
+
+    <TextView
+        android:id="@+id/product_count_down_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_pro_bold"
+        android:text="@string/product_count_down_timer_example"
+        android:textSize="@dimen/product_price_text_size" />
+
+    <include
+        android:id="@+id/product_rating_bar"
+        layout="@layout/rating_bar" />
+
+</LinearLayout>
