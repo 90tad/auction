@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Sàn đấu giá</string>
+
+    <!--    main menu title-->
+    <string name="home_tab">Home</string>
+    <string name="search_tab">Search</string>
+    <string name="personal_tab">Personal</string>
+    <string name="notification_tab">Notification</string>
+
+
+    <string name="app_description">Sàn đấu giá trực tuyến</string>
+    <string name="app_slogan">Hãy đấu theo giá của bạn</string>
+    <string name="input_username_hint">Tên đăng nhập</string>
+    <string name="input_full_name_hint">Họ và tên</string>
+    <string name="input_birth_day_hint">Ngày sinh</string>
+    <string name="input_phone_number_hint">Số điện thoại</string>
+    <string name="input_email_hint">Email</string>
+    <string name="input_repeat_password_hint">Nhập lại mật khẩu</string>
+    <string name="input_password_hint">Mật khẩu</string>
+    <string name="forgot_password">Bạn quên mật khẩu?</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="have_not_account">Bạn không có tài khoản?</string>
+    <string name="have_account">Bạn đã có tài khoản?</string>
+    <string name="or">Hoặc</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+
+    <string name="product_name_example">Doitsu koihaku - koi #r1015356</string>
+    <string name="product_price_example">25.000.000 VNĐ</string>
+    <string name="image_content_description">Hình ảnh sản phẩm</string>
+    <string name="product_rate_count_example">43 đánh giá</string>
+    <string name="product_count_down_timer_example">04:04:04:04</string>
+    <string name="tap_to_zoom">Chạm để phóng to</string>
+    <string name="init_price">Giá khởi điểm</string>
+    <string name="set_bid">Đặt giá bid trực tiếp</string>
+    <string name="set_bid_automatic">Đặt giá bid tự động</string>
+    <string name="set_bid_button_text">Đặt bid</string>
+    <string name="set_bid_automatic_button_text">Bid tự động</string>
+    <string name="vnd_currency">vnd</string>
+
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="three">3</string>
+    <string name="two">2</string>
+    <string name="one">1</string>
+
+
+    <string name="rate_count_example">100 lượt</string>
+    <string name="product_id_example">Mã: #r1231231</string>
+    <string name="product_owner_example">Chủ trại: Trại cá Koi Hosokai</string>
+    <string name="product_sex_example">Giới tính: con đực</string>
+    <string name="product_birth_day_example">Năm sinh: 2018</string>
+    <string name="product_dimen_example">Kích thước: 13,78 cm</string>
+    <string name="product_type_example">Loại cá: Kin Showa</string>
+    <string name="product_comment_count_example">28 bình luận</string>
+
+    <string name="like">Thích</string>
+    <string name="share">Chia sẻ</string>
+    <string name="rules">Chính sách</string>
+    <string name="time">Thời gian</string>
+    <string name="pay">Thanh toán</string>
+
+    <string name="auction_rules">Chính sách đấu giá</string>
+    <string name="auction_history">Lịch sử đấu giá</string>
+    <string name="shipping_information">Thông tin vận chuyển</string>
+    <string name="common_question">Câu hỏi thường gặp</string>
+    <string name="comment_and_review">Câu hỏi và đánh giá</string>
+
+    <string name="auction_history_header_time">Thời gian bắt đầu</string>
+    <string name="auction_history_header_price">Số tiền</string>
+    <string name="auction_history_header_name">Tên người đấu giá</string>
+
+
+    <string name="product_detail_activity_title">Thông tin chi tiết</string>
+
+    <string name="rules_description_example">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet lorem non risus posuere tincidunt at sit amet arcu. Curabitur pulvinar odio et viverra efficitur. Donec sit amet ultricies justo. Nam consectetur nec mi eu volutpat. Integer sagittis lobortis felis. Fusce scelerisque molestie nisi et auctor. Pellentesque vitae neque velit. In non hendrerit elit.</string>
+    <string name="time_description_example">Dự kiến đầu tuần vào mỗi thứ 2 hàng tuần 6h-23h. Bao gồm vận chuyển nhanh theo đường quốc tế</string>
+    <string name="pay_description_example">Bất kì chi phí vận chuyển và nhập khẩu quốc tế nào cũng được thanh toán một phần cho Pitney Bowes Inc</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
