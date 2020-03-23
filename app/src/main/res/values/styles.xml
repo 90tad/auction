@@ -38,4 +38,11 @@
         <item name="android:maxHeight">20dip</item>
     </style>
 
+    <style name="AuctioncHistoryHeaderText">
+        <item name="android:paddingBottom">@dimen/base_margin_4</item>
+        <item name="android:paddingTop">@dimen/base_margin_4</item>
+        <item name="android:fontFamily">@font/maven_pro_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
 </resources>

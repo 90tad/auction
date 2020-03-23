@@ -1,16 +1,12 @@
 package com.example.myapplication.main.main_tab.notification
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.viewpager.widget.ViewPager
 import com.example.myapplication.R
-import com.example.myapplication.product_detail.adapter.FragmentAdapter
-import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.fragment_notification.*
+import kotlinx.android.synthetic.main.product_item_2.*
 
 class NotificationFragment : Fragment() {
 
@@ -24,6 +20,10 @@ class NotificationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        expanded_more_button.setOnClickListener {
+
+        }
     }
 
 }
