@@ -6,7 +6,7 @@ import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.listener.ItemClickListener
-import com.example.myapplication.model.Product
+import com.example.myapplication.model.dto.Product
 import kotlinx.android.synthetic.main.product_item.view.*
 import kotlinx.android.synthetic.main.rating_bar.view.*
 

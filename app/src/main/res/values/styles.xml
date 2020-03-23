@@ -1,10 +1,14 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorPrimary</item>
+<!--        <item name="android:navigationBarColor" tools:targetApi="lollipop">@android:color/white-->
+        <!--        </item>-->
+        <!--        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>-->
     </style>
 
     <style name="AppBarTheme" parent="AppTheme">
@@ -36,6 +40,17 @@
         <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
         <item name="android:minHeight">8dip</item>
         <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="AuctioncHistoryHeaderText">
+        <item name="android:paddingBottom">@dimen/base_margin_4</item>
+        <item name="android:paddingTop">@dimen/base_margin_4</item>
+        <item name="android:fontFamily">@font/maven_pro_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MyToolbarTitle">
+        <item name="fontFamily">@font/maven_pro_regular</item>
     </style>
 
 </resources>

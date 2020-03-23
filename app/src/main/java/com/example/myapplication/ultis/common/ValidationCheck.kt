@@ -1,7 +1,7 @@
-package com.example.myapplication.ultis
+package com.example.myapplication.ultis.common
 
-import com.example.myapplication.model.SignInRequest
-import com.example.myapplication.model.SignUpRequest
+import com.example.myapplication.model.dto.SignInRequest
+import com.example.myapplication.model.dto.SignUpRequest
 import java.util.regex.Pattern
 
 object ValidationCheck {
@@ -17,17 +17,23 @@ object ValidationCheck {
     fun isUsernameValid(username: String) = username.length >= MIN_PASSWORD_LENGTH
 
     fun isConfirmPasswordMatch(password: String, confirmPassword: String) =
-        isPasswordValid(password) && password == confirmPassword
+        isPasswordValid(
+            password
+        ) && password == confirmPassword
 
-    fun isSignUpValid(registerRequest: SignUpRequest): Boolean {
-        return isEmailValid(registerRequest.email) && isConfirmPasswordMatch(
-            registerRequest.password,
-            registerRequest.confirmPassword
+    fun isSignUpValid(signUpRequest: SignUpRequest): Boolean {
+        return isEmailValid(
+            signUpRequest.email
+        ) && isConfirmPasswordMatch(
+            signUpRequest.password,
+            signUpRequest.confirmPassword
         )
     }
 
-    fun isSignInValid(loginRequest: SignInRequest) =
-        isUsernameValid(loginRequest.username) && isPasswordValid(
-            loginRequest.password
+    fun isSignInValid(signInRequest: SignInRequest) =
+        isUsernameValid(
+            signInRequest.username
+        ) && isPasswordValid(
+            signInRequest.password
         )
 }

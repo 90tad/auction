@@ -4,10 +4,12 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.myapplication.R
+import com.example.myapplication.ultis.common.SharedPrefUtils
 import com.example.myapplication.main.main_tab.home.HomeFragment
 import com.example.myapplication.main.main_tab.notification.NotificationFragment
 import com.example.myapplication.main.main_tab.personal.PersonalFragment
@@ -43,6 +45,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //token
+        val preference = getSharedPreferences(SharedPrefUtils.getTokenKey(), Context.MODE_PRIVATE)
+        val token = preference.getString(SharedPrefUtils.getTokenKey(), null)
+        Log.d("asd", "token: $token")
+
         mNavListener = initNavListener()
         mMainViewPagerPageChangeListener = initMainViewPagerPageChangeListener()
 
@@ -50,6 +57,11 @@ class MainActivity : AppCompatActivity() {
         mainViewPager.addOnPageChangeListener(mMainViewPagerPageChangeListener)
         initMainViewPager()
         configActionBar()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_toolbar_menu, menu)
+        return true
     }
 
     private fun initNavListener(): BottomNavigationView.OnNavigationItemSelectedListener {

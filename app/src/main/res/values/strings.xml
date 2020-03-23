@@ -29,7 +29,7 @@
     <string name="product_name_example">Doitsu koihaku - koi #r1015356</string>
     <string name="product_price_example">25.000.000 VNĐ</string>
     <string name="image_content_description">Hình ảnh sản phẩm</string>
-    <string name="product_rate_count_example">(43 đánh giá)</string>
+    <string name="product_rate_count_example">43 đánh giá</string>
     <string name="product_count_down_timer_example">04:04:04:04</string>
     <string name="tap_to_zoom">Chạm để phóng to</string>
     <string name="init_price">Giá khởi điểm</string>
@@ -66,6 +66,11 @@
     <string name="shipping_information">Thông tin vận chuyển</string>
     <string name="common_question">Câu hỏi thường gặp</string>
     <string name="comment_and_review">Câu hỏi và đánh giá</string>
+
+    <string name="auction_history_header_time">Thời gian bắt đầu</string>
+    <string name="auction_history_header_price">Số tiền</string>
+    <string name="auction_history_header_name">Tên người đấu giá</string>
+
 
     <string name="product_detail_activity_title">Thông tin chi tiết</string>
 

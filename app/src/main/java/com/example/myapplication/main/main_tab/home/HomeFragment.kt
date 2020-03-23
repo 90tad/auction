@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.myapplication.R
 import com.example.myapplication.listener.ItemClickListener
 import com.example.myapplication.main.main_tab.home.adapter.ProductRecyclerViewAdapter
-import com.example.myapplication.model.Product
+import com.example.myapplication.model.dto.Product
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment(), ItemClickListener<Product> {

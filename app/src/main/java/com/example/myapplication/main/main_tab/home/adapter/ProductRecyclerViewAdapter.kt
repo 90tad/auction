@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.listener.ItemClickListener
-import com.example.myapplication.model.Product
+import com.example.myapplication.model.dto.Product
 
 class ProductRecyclerViewAdapter(var context: Context, var productList: ArrayList<Product>) :
     RecyclerView.Adapter<ProductViewHolder>() {

@@ -1,4 +1,4 @@
-package com.example.myapplication.ultis
+package com.example.myapplication.ultis.common
 
 import java.text.NumberFormat
 import java.util.*
