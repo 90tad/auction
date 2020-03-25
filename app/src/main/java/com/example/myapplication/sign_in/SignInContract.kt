@@ -7,7 +7,7 @@ import com.example.myapplication.model.dto.SignInResponse
 interface SignInContract {
 
     interface View : BaseView {
-        fun onSignInSuccess(signInResponse: SignInResponse)
+        fun onSignInSuccess()
         fun onSignInError()
         fun onUsernameInputInvalid()
         fun onPasswordInputInvalid()

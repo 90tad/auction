@@ -9,11 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.myapplication.R
-import com.example.myapplication.constant.PreferenceKey
 import com.example.myapplication.main.main_tab.home.HomeFragment
 import com.example.myapplication.main.main_tab.notification.NotificationFragment
 import com.example.myapplication.main.main_tab.personal.PersonalFragment
 import com.example.myapplication.main.main_tab.search.SearchFragment
+import com.example.myapplication.ultis.common.SharedPrefUtils
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main_app_bar.view.*
@@ -44,11 +44,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        //token
-        val preference = getSharedPreferences(PreferenceKey.getTokenKey(), Context.MODE_PRIVATE)
-        val token = preference.getString(PreferenceKey.getTokenKey(), null)
-        Log.d("asd", "token: $token")
 
         mNavListener = initNavListener()
         mMainViewPagerPageChangeListener = initMainViewPagerPageChangeListener()
@@ -145,6 +140,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setHomeButtonEnabled(true)
     }
 
+    //TODO: HANDLE ON TAB SELECTED
     private fun onHomeTabSelected() {
         Log.d(LOG_TAG, "HOME TAB SELECTED")
     }

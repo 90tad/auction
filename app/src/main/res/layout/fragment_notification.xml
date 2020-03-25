@@ -6,6 +6,8 @@
     android:orientation="vertical"
     tools:context=".main.main_tab.notification.NotificationFragment">
 
-    <include layout="@layout/product_item_2" />
+    <include
+        android:id="@+id/item"
+        layout="@layout/product_item_2" />
 
 </LinearLayout>

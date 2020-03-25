@@ -24,6 +24,9 @@
     <dimen name="product_like_icon_dimen">16dp</dimen>
     <dimen name="product_additional_information_section_text_width">86dp</dimen>
 
+    <dimen name="current_user_view_height">72dp</dimen>
+    <dimen name="current_user_avatar_dimens">40dp</dimen>
+
     <dimen name="icon_12">12dp</dimen>
     <dimen name="icon_24">24dp</dimen>
 </resources>

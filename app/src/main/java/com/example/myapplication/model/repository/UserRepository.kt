@@ -1,8 +1,9 @@
 package com.example.myapplication.model.repository
 
-import com.example.myapplication.model.dto.SignInResponse
+import com.example.myapplication.model.dto.SignInRequest
+import com.example.myapplication.model.dto.User
 import io.reactivex.Single
 
 interface UserRepository {
-    fun signIn(username: String, password: String): Single<SignInResponse>
+    fun signIn(signInRequest: SignInRequest): Single<User>
 }

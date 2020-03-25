@@ -6,19 +6,15 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.R
 import com.example.myapplication.constant.Error
-import com.example.myapplication.constant.PreferenceKey
-import com.example.myapplication.model.dto.SignInResponse
 import com.example.myapplication.ultis.extensions.invisible
 import com.example.myapplication.ultis.extensions.onTextChanged
 import com.example.myapplication.ultis.extensions.visible
-import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
 class SignInActivity : AppCompatActivity(), SignInContract.View {
 
     companion object {
         fun getInstance(context: Context): Intent = Intent(context, SignInActivity::class.java)
-        private val SIGN_IN_KEY = PreferenceKey.getTokenKey()
     }
 
     private val mPresenter by lazy { SignInPresenter() }
@@ -37,19 +33,19 @@ class SignInActivity : AppCompatActivity(), SignInContract.View {
         submit_sign_in_button.setOnClickListener {
             mPresenter.signIn()
             sign_in_progressBar.visible()
-            mNavigator.navigateMainScreen()
         }
-
     }
 
-    override fun onSignInSuccess(signInResponse: SignInResponse) {
+    override fun onSignInSuccess() {
         //TODO: SHOW PROGRESSBAR, SAVE TOKEN, NAVIGATE TO HOME SCREEN
-        val gSon = Gson()
-        val json = gSon.toJson(signInResponse)
-        val sharedPreferences =
-            getSharedPreferences(SIGN_IN_KEY, Context.MODE_PRIVATE)
-        sharedPreferences.edit().putString(SIGN_IN_KEY, json).apply()
+//        val gSon = Gson()
+//        val json = gSon.toJson(signInResponse)
+//        val sharedPreferences = SharedPrefUtils.getInstance()
+//        sharedPreferences.edit().putString(SIGN_IN_KEY, json).apply()
+
+//        SharedPrefUtils.putSignInResponse(signInResponse)
         sign_in_progressBar.invisible()
+        mNavigator.navigateMainScreen()
     }
 
     override fun onSignInError() {
